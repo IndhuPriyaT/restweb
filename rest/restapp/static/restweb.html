@@ -1,0 +1,192 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #4bc558;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            background-color: rgb(9, 73, 9);
+            text-align: center;
+            text-indent: 5px;
+            font-size: 55px;
+            color: rgba(30, 206, 59, 0.873);
+            padding: 50px;
+            margin-bottom: 20px;
+        }
+
+        .navbar {
+            background-color: rgb(17, 44, 17);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 20px;
+        }
+
+        .nav-links a {
+            color: #1cb72b;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .nav-links a:hover {
+            color: #35ab4e;
+            background-color: #053403;
+        }
+
+        .nav-links a.active {
+            color: #35ab4e;
+            font-weight: 700;
+            border-bottom: 2px solid #062c0f;
+        }
+
+        .container {
+            position: relative;
+            margin-top: 80px; /* Adjusted to avoid navbar overlap */
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 3%;
+        }
+
+        .photo {
+            margin-top: 20px;
+            margin-bottom: 5px;
+            width: 100%;
+            height: 550px;
+            background-image: url('photo.png');
+            border-radius: 5%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .centered {
+            font-size: 60px;
+            color: rgb(217, 237, 223);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .shadow-box {
+            padding: 20px;
+            background-color: #062c0f;
+            box-shadow: 30px 28px 30px rgba(4, 51, 30, 0.237);
+            border-radius: 8px;
+            max-width: 300px;
+            margin: 20px auto;
+            text-align: center;
+            color: rgb(217, 237, 223);
+        }
+
+        .admin-image1,
+        .admin-image2 {
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 300px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        .admin-image1 {
+            background-image: url('food.jpg');
+        }
+
+        .admin-image2 {
+            background-image: url('window.png');
+        }
+
+        .transbox {
+            margin: 30px;
+            background-color: #43883e;
+            opacity: 0.8;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .transbox p {
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .centered {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <h1>The Lime Light</h1>
+    <div class="navbar">
+        <ul class="nav-links">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="menu.html">MENU</a></li>
+            <li><a href="admin.html">ADMIN</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <img src="photo.png" alt="Special Offer">
+        <div class="centered">
+            <h2>SPECIAL<br> WEEKEND <br>OFFER</h2>
+        </div>
+        <div class="shadow-box">
+            <p>Enjoy the exclusive discounts offered this weekend</p>
+        </div>
+
+        <div class="admin-image1"></div>
+        <div class="admin-image2"></div>
+
+        <div class="transbox">
+            <p>Book A Table Today</p>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
+
